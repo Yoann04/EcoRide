@@ -1,0 +1,18 @@
+# Node / Angular
+node_modules/
+dist/
+.angular/
+.env
+
+# Symfony / PHP
+/vendor/
+/var/
+/.env.local
+/public/uploads/
+/.idea/
+/.cache/
+/tests/
+
+# Mac / VS Code
+.DS_Store
+.vscode/
