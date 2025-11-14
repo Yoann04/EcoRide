@@ -51,3 +51,33 @@ Assurez-vous d’avoir installé :
 git clone https://github.com/Yoann04/ecoride.git
 cd ecoride
 ```
+
+---
+
+## Gestion du versionnement (Git)
+
+Le projet EcoRide suit une organisation Git structurée :
+
+- **main** → branche stable contenant les versions validées.
+- **dev** → branche de développement pour les fonctionnalités en cours.
+- **feature/** → branches spécifiques pour chaque nouvelle fonctionnalité (ex : `feature/authentication`).
+
+### Commandes principales
+
+```bash
+# Création d’une branche de développement
+git checkout -b dev
+
+# Création d’une branche de fonctionnalité
+git checkout -b feature/authentication
+
+# Validation et fusion
+git add .
+git commit -m "Ajout fonctionnalité d'authentification"
+git push -u origin feature/authentication
+
+# Fusion vers la branche dev
+git checkout dev
+git merge feature/authentication
+git push
+```
