@@ -81,3 +81,5 @@ git checkout dev
 git merge feature/authentication
 git push
 ```
+
+Ajout d’une branche de développement (dev) pour structurer le workflow Git.
